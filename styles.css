@@ -1,25 +1,62 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster');
 body {
-    width: 100vw;
-    height: 100vh;
-    background:
-      linear-gradient(45deg, #157fc4 0%, white 50%, #1f497d 100%);
-    background-position: 0 0;
-    background-size: 200vw 200vw;
-  }
+	background: linear-gradient(-45deg, #9370DB, #7851A9, #1f497d, #0012b5);
+	background-size: 400% 400%;
+	animation: gradient 20s ease infinite;
+	height: 100vh;
+}
 
-.logo {
+html {
+    font-family: 'Lobster', sans-serif;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+.main-info
+{
+    border: 2px solid mintcream;
+    background-color: rgba(19, 19, 70, 0.5);
+    color: mintcream;
+    position: absolute;
     margin: auto;
+    overflow: auto;
+    padding: 20px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    min-width: 320px;
+    min-height: 480px;
+    width: 320px;
+    height: 480px;
+    text-align: center;
+    font-size: 24px;
 }
-.logo-row {
-    width: 150px;
-    margin: 0 auto;
+.inner {
+   margin: 30% 0 25% 0;
+
 }
-header {
-  margin-top: 20px;
-  padding-bottom: 10px;
+a {
+    color: mintcream;
+    text-decoration: none;
 }
-.logo {
-  width: 150px;
-  height: 100px;
-  text-align: center;
+
+a:hover{
+    color: mintcream;
+    text-decoration: underline;
 }
+a:active{
+    color: mintcream;
+}
+

@@ -12,36 +12,28 @@
     
 <body id="mainfont">
     <header>
-        <div class="row">
-            <div class="logo-row">
-                <img class="logo" size="100x200" src="img/Logo.png">
-            </div>
-        </div>
+
     </header>
+    <main>
+        <div class="main-info">
+           <div class="inner">
+               <p>Lemetyuynen Yury</p>
+                <hr>
+                <a href="about.html">About me</a>
+                <hr>
+                <a href="https://github.com/altnightfall">My GitHub</a>
+                <hr>
+                <a href="">My projects</a>
+                <hr>
+                <a href="">CV</a>
+           </div>
+        </div>
+    </main>
+    <footer>
+        
+    </footer>
 </body>
     
     
-<script>
-    ns4 = (document.layers)? true:false
-    ie4 = (document.all)? true:false
 
-    function init() {
-        if (ns4) {document.captureEvents(Event.MOUSEMOVE);}
-        document.onmousemove=mousemove;
-    }
-    function mousemove(event) {
-        var mouse_x = y = 0;
-        if (document.attachEvent != null) {
-            mouse_x = window.event.clientX;
-            mouse_y = window.event.clientY;
-        } else if (!document.attachEvent && document.addEventListener) {
-            mouse_x = event.clientX-0;
-            mouse_y = event.clientY-0;
-        }
-        document.getElementById('mainfont').style.backgroundPosition= 'calc('+mouse_x+'px - 100vw) calc('+mouse_y+'px - 100vw)';
-    
-    }
-    init()
-
-</script>
 </html>
