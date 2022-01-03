@@ -4,9 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="icon" sizes="48x48" href="img/icon.ico">
+    <link rel="stylesheet" href="styles.css">
+    <title>AltNightFall</title>
 </head>
-<body>
-    <h1>Wow! I created my page on Github!</h1>
+<body id="mainfont">
+    <div class="img">
+        <img src="img/Logo.png">
+    </div>
 </body>
+<script>
+    ns4 = (document.layers)? true:false
+    ie4 = (document.all)? true:false
+
+    function init() {
+        if (ns4) {document.captureEvents(Event.MOUSEMOVE);}
+        document.onmousemove=mousemove;
+    }
+    function mousemove(event) {
+        var mouse_x = y = 0;
+        if (document.attachEvent != null) {
+            mouse_x = window.event.clientX;
+            mouse_y = window.event.clientY;
+        } else if (!document.attachEvent && document.addEventListener) {
+            mouse_x = event.clientX-0;
+            mouse_y = event.clientY-0;
+        }
+        document.getElementById('mainfont').style.backgroundPosition= 'calc('+mouse_x+'px - 100vw) calc('+mouse_y+'px - 100vw)';
+    
+    }
+    init()
+
+</script>
 </html>

@@ -1,0 +1,13 @@
+body {
+    windth: 100vw;
+    height: 100vh;
+    background:
+      linear-gradient(45deg, orange 0, lightblue 50%, orange 100%);
+    background-position: 0 0;
+    background-size: 200vw 200vw;
+    align-content: center;
+  }
+
+.img {
+    align-content: center;
+}
