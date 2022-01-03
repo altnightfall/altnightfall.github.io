@@ -7,7 +7,7 @@ body {
 }
 
 html {
-    font-family: 'Lobster', sans-serif;
+    
 }
 
 @keyframes gradient {
@@ -36,16 +36,23 @@ html {
     left: 0;
     bottom: 0;
     right: 0;
-    min-width: 320px;
+    min-width: 318px;
     min-height: 480px;
-    width: 320px;
+    width: 318px;
     height: 480px;
     text-align: center;
     font-size: 24px;
 }
 .inner {
-   margin: 30% 0 25% 0;
-
+    margin: 30% 0 25% 0;
+    font-family: 'Lobster', sans-serif;
+}
+.text-inner{
+    margin: 20% 0 20% 0;
+    font-family: 'Roboto', sans-serif;
+}
+.projects-inner{
+    font-family: 'Roboto', sans-serif;
 }
 a {
     color: mintcream;
