@@ -43,17 +43,21 @@ html {
     text-align: center;
     font-size: 24px;
 }
+
 .inner {
     margin: 30% 0 25% 0;
     font-family: 'Lobster', sans-serif;
 }
+
 .text-inner{
     margin: 20% 0 20% 0;
     font-family: 'Roboto', sans-serif;
 }
+
 .projects-inner{
     font-family: 'Roboto', sans-serif;
 }
+
 a {
     color: mintcream;
     text-decoration: none;
