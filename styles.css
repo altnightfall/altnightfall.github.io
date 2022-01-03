@@ -1,13 +1,25 @@
 body {
-    windth: 100vw;
+    width: 100vw;
     height: 100vh;
     background:
-      linear-gradient(45deg, orange 0, lightblue 50%, orange 100%);
+      linear-gradient(45deg, #157fc4 0%, white 50%, #1f497d 100%);
     background-position: 0 0;
     background-size: 200vw 200vw;
-    align-content: center;
   }
 
-.img {
-    align-content: center;
+.logo {
+    margin: auto;
+}
+.logo-row {
+    width: 150px;
+    margin: 0 auto;
+}
+header {
+  margin-top: 20px;
+  padding-bottom: 10px;
+}
+.logo {
+  width: 150px;
+  height: 100px;
+  text-align: center;
 }
